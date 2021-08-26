@@ -22,7 +22,7 @@
 SendMode Event
 SetWorkingDir %A_ScriptDir%
 
-global version := "1.0"
+global version := "1.1"
 
 global ini_km := "keebmangler"
 global ini_clh := "capslock_hyper"
