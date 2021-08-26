@@ -133,9 +133,9 @@ Xev_Tooltip() {
 	lkeys := ""
 
 	Loop, 255 {
-		key := GetKeyName(Format("sc{:x}", A_Index))
+		key := GetKeyName(Format("vk{:x}", A_Index))
 
-		if(key == "LShift")
+		if(key == "Shift" || key == "Alt" || key == "Control")
 			continue
 
 		if(GetKeyState(key, "p"))
