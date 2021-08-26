@@ -145,13 +145,8 @@ Xev_Tooltip() {
 			lkeys = %lkeys% %key%
 	}
 
-	if(InStr(A_ThisHotKey, "Up"))
-		hotkey := ""
-	else
-		hotkey := A_ThisHotKey
-
-	if(pkeys or lkeys or hotkey)
-		Tooltip, physical: %pkeys%`nlogical: %lkeys%`nhotkey: %hotkey%
+	if(pkeys or lkeys)
+		Tooltip, physical: %pkeys%`nlogical: %lkeys%
 	else
 		Tooltip
 }
