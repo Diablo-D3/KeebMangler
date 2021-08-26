@@ -169,18 +169,18 @@ SetCapsLockState AlwaysOff
 *RAlt up::send {Blind}{AppsKey up}
 #if
 
-#if enable_raa && !enable_mac
+#if !enable_mac && enable_raa
 *RAlt::send {Blind}{LCtrl down}{RAlt down}
 *RAlt up::send {Blind}{LCtrl up}{RAlt up}
 #if
 
-#if enable_raa && enable_mac
-*RWin::send {Blind}{LCtrl down}{RAlt down}
-*RWin up::send {Blind}{LCtrl up}{RAlt up}
-#if
-
-#if !enable_raa && enable_mac
+#if enable_mac && !enable_raa
 *RWin::send {Blind}{RAlt down}
 *RWin up::send {Blind}{RAlt up}
+#if
+
+#if enable_mac && enable_raa
+*RWin::send {Blind}{LCtrl down}{RAlt down}
+*RWin up::send {Blind}{LCtrl up}{RAlt up}
 #if
 
