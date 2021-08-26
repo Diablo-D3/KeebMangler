@@ -159,33 +159,33 @@ Xev_Tooltip() {
 ; Maps
 #if enable_clh
 SetCapsLockState AlwaysOff
-*CapsLock::send {LCtrl down}{LWin down}
-*CapsLock Up::send {LCtrl up}{LWin up}
+*CapsLock::send {Blind}{LCtrl down}{LWin down}
+*CapsLock Up::send {Blind}{LCtrl up}{LWin up}
 #if
 
 #if enable_mac
-*LAlt::send {LWin down}
-*LAlt up::send {LWin up}
+*LAlt::send {Blind}{LWin down}
+*LAlt up::send {Blind}{LWin up}
 
-*LWin::send {LAlt down}
-*LWin up::send {LAlt up}
+*LWin::send {Blind}{LAlt down}
+*LWin up::send {Blind}{LAlt up}
 
-*RAlt::send {RAppsKey down}
-*RAlt up::send {RAppsKey up}
+*RAlt::send {Blind}{RAppsKey down}
+*RAlt up::send {Blind}{RAppsKey up}
 #if
 
 #if enable_raa && !enable_mac
-*RAlt::send {LCtrl down}{RAlt down}
-*RAlt up::send {LCtrl up}{RAlt up}
+*RAlt::send {Blind}{LCtrl down}{RAlt down}
+*RAlt up::send {Blind}{LCtrl up}{RAlt up}
 #if
 
 #if enable_raa && enable_mac
-*RWin::send {LCtrl down}{RAlt down}
-*RWin up::send {LCtrl up}{RAlt up}
+*RWin::send {Blind}{LCtrl down}{RAlt down}
+*RWin up::send {Blind}{LCtrl up}{RAlt up}
 #if
 
 #if !enable_raa && enable_mac
-*RWin::send {RAlt down}
-*RWin up::send {RAlt up}
+*RWin::send {Blind}{RAlt down}
+*RWin up::send {Blind}{RAlt up}
 #if
 
