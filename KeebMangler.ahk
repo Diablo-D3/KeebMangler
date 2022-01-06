@@ -19,7 +19,7 @@
 #SingleInstance force
 #UseHook on
 
-SendMode Event
+SendMode Input
 SetWorkingDir %A_ScriptDir%
 
 global version := "1.1"
