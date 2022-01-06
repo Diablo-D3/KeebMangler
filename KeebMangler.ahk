@@ -152,6 +152,10 @@ Xev_Tooltip() {
 }
 
 ; Maps
+#if !enable_clh
+SetCapsLockState Off
+#if
+
 #if enable_clh
 SetCapsLockState AlwaysOff
 *CapsLock::send {Blind}{LCtrl down}{LWin down}
