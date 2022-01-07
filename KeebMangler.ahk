@@ -1,4 +1,4 @@
-﻿; KeebMangler
+; KeebMangler
 ; Copyright (C) 2021 Patrick McFarland <pmcfarland@adterrasperaspera.com>
 
 ; This program is free software: you can redistribute it and/or modify
@@ -31,8 +31,8 @@ global ini_mac := "mac_swap"
 global ini_xev := "xev"
 
 global menu_km := "KeebMangler"
-global menu_clh := "CapsLock ⟶ Hyper"
-global menu_raa := "RAlt ⟶ AltGr"
+global menu_clh := "CapsLock " . Chr(129046) . " Hyper"
+global menu_raa := "RAlt " . Chr(129046) . " AltGr"
 global menu_mac := "Mac Swap"
 global menu_xev := "Event Spy (xev)"
 
