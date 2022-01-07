@@ -89,6 +89,11 @@ handle_clh() {
 	enable_clh := !enable_clh
 	Menu, Tray, ToggleCheck, %menu_clh%
 	IniWrite, %enable_clh%, %config%, %ini_km%, %ini_clh%
+
+    if(enable_clh)
+        SetCapsLockState AlwaysOff
+    else
+        SetCapsLockState Off
 }
 
 handle_raa() {
@@ -152,12 +157,7 @@ Xev_Tooltip() {
 }
 
 ; Maps
-#if !enable_clh
-SetCapsLockState Off
-#if
-
 #if enable_clh
-SetCapsLockState AlwaysOff
 *CapsLock::send {Blind}{LCtrl down}{LWin down}
 *CapsLock Up::send {Blind}{LCtrl up}{LWin up}
 #if
