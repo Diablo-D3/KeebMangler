@@ -22,7 +22,7 @@
 Sendmode Input
 SetWorkingDir %A_ScriptDir%
 
-global version := "1.1"
+global version := "1.2"
 
 global ini_km := "keebmangler"
 global ini_clh := "capslock_hyper"
